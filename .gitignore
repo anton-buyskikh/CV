@@ -3,9 +3,11 @@ sample.pdf
 
 
 *.synctex.gz
+*.aux
 *.xml
 *.out
 *.log
+*.fls
 *.blg
 pdfa.xmpi
 *.fdb_latexmk
