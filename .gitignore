@@ -1,2 +1,10 @@
 build/
 sample.pdf
+
+
+*.synctex.gz
+*.xml
+*.out
+*.log
+pdfa.xmpi
+*.fdb_latexmk
