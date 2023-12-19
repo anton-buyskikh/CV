@@ -6,5 +6,6 @@ sample.pdf
 *.xml
 *.out
 *.log
+*.blg
 pdfa.xmpi
 *.fdb_latexmk
