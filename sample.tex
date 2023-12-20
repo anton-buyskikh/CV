@@ -5,15 +5,12 @@
 %% AltaCV uses the fontawesome5 and packages.
 %% See http://texdoc.net/pkg/fontawesome5 for full list of symbols.
 
-% Change the page layout if you need to
 \geometry{left=1.25cm,right=1.25cm,top=1.5cm,bottom=1.5cm,columnsep=1.2cm}
 
-% The paracol package lets you typeset columns of text in parallel
+% Set columns of text in parallel
 \usepackage{paracol}
 
-
-% Change the font if you want to, depending on whether
-% you're using pdflatex or xelatex/lualatex
+% Change the font, depending on whether you're using pdflatex or xelatex/lualatex
 \ifxetexorluatex
   % If using xelatex or lualatex:
   \setmainfont{Roboto Slab}
@@ -27,7 +24,7 @@
   \renewcommand{\familydefault}{\sfdefault}
 \fi
 
-% Change the colours if you want to
+% Change colours
 \definecolor{SlateGrey}{HTML}{2E2E2E}
 \definecolor{LightGrey}{HTML}{666666}
 \definecolor{DarkPastelRed}{HTML}{450808}
@@ -45,32 +42,28 @@
 \colorlet{emphasis}{SlateGrey}
 \colorlet{body}{LightGrey}
 
-
-% Change some fonts, if necessary
+% Change fonts
 \renewcommand{\namefont}{\Huge\rmfamily\bfseries}
 \renewcommand{\personalinfofont}{\footnotesize}
 \renewcommand{\cvsectionfont}{\LARGE\rmfamily\bfseries}
 \renewcommand{\cvsubsectionfont}{\large\bfseries}
 
-% Change the bullets for itemize and rating marker
-% for \cvskill if you want to
+% Change bullets for itemize and rating marker for \cvskill
 \renewcommand{\itemmarker}{{\small\textbullet}}
 \renewcommand{\ratingmarker}{\faCircle}
 
 \begin{document}
 \name{Anton Buyskikh}
 \tagline{Senior Quantum Software Engineer}
-%% You can add multiple photos on the left or right
 \photoR{2.8cm}{prof_pic}
 
-\personalinfo{%
+\personalinfo{
     \email{anton.buyskikh@gmail.com}
     \phone{+44 7510 850009}
     \location{Cambridge, UK}
     \linkedin{anton-buyskikh}
     \github{anton-buyskikh}
     \orcid{0000-0003-4542-7086}
-    
     % \homepage{www.homepage.com}
     % \twitter{@twitterhandle}
     
@@ -95,14 +88,17 @@
 }
 
 \makecvheader
-%% Depending on your tastes, you may want to make fonts of itemize environments slightly smaller
+
+% Can make fonts of itemize environments smaller
 % \AtBeginEnvironment{itemize}{\small}
 
 \columnratio{0.65}
 
 \begin{paracol}{2}
 
+% ==============================================================================
 \cvsection{Relevant Experiences}
+% ==============================================================================
 
 \cvevent{Senior Quantum Software Engineer}{Riverlane}{2021/07 -- Present}{Cambridge, UK}
 \cvevent{Quantum Software Engineer}{Riverlane}{2019/09 -- 2021/07}{Cambridge, UK}
@@ -131,16 +127,14 @@ and technical mentors, experienced data scientists and technologists from indust
 and work in teams to develop high-impact, cutting-edge, sustainable, and scalable data science solutions.
 
 \begin{itemize}
-
     \item Our team has developed a customer lifetime value (CLV) model and investigated the customers churn.
-
     \item Developed a predictive model providing a marketing strategy tool with potential savings
     for the company exceeding £1M per year.
-
 \end{itemize}
 
-\cvevent{Research Associate}{University of Strathclyde}{2017/08 -- 2019/09}{Glasgow, UK}
+\divider
 
+\cvevent{Research Associate}{University of Strathclyde}{2017/08 -- 2019/09}{Glasgow, UK}
 
 Numerical investigation of quantum many-body systems of cold atomic gases in- and out-of-equilibrium.
 These systems have a great potential in quantum computing and quantum simulations that yet to be exploited.
@@ -156,10 +150,12 @@ I am actively investigating machine learning algorithms with a potential in the 
     \item R\&D.
 \end{itemize}
 
+% ==============================================================================
 \cvsection{Education}
+% ==============================================================================
 
 \cvevent{PhD in Physics}{University of Strathclyde}{2014 -- 2017}{Glasgow, UK}
-Thesis title: Dynamics of Quantum Many-Body Systems with Long-Range Interactions
+Thesis: Dynamics of Quantum Many-Body Systems with Long-Range Interactions
 
 \divider
 
@@ -167,16 +163,41 @@ Thesis title: Dynamics of Quantum Many-Body Systems with Long-Range Interactions
 
 \divider
 
-\cvevent{BSc+MSc in Theoretical Physics}{St. Petersburg Polytechnic University}{2006 -- 2010}{St. Petersburg, Russia}
-Thesis title: THz radiation generation in AlGaAs semiconductor nanowires excited by femtosecond pulses.
+\cvevent{BSc\,\&\,MSc in Theoretical Physics}{St. Petersburg Polytechnic University}{2006 -- 2012}{St. Petersburg, Russia}
+Thesis: THz radiation generation in AlGaAs semiconductor nanowires excited by femtosecond pulses.
 
-% ============================================================================================================
-
+% ==============================================================================
 \cvsection{Other Experiences}
+% ==============================================================================
 
-\cvevent{Teacher Assistant}{University of Pittsburgh}{Aug 2012 -- June 2014}{Pittsburgh, USA}
+\cvevent{Tutor}{University of Strathclyde}{2018/09 -- 2019/09}{Glasgow, UK}
+Topics: Python and Matlab programming for undergraduate students.
 
-%\cvsection{Workload balance}
+\divider
+
+\cvevent{Teacher Assistant}{University of Pittsburgh}{2012/08 -- 2014/06}{Pittsburgh, PA, USA}
+Classes: Classical Mechanics, Quantum Mechanics
+
+\divider
+
+\cvevent{Lab Assistant}{Ioffe Institute}{2009/07 -- 2012/07}{St. Petersburg, Russia}
+% Optical table stuff.
+
+% ==============================================================================
+\cvsection{Volunteering}
+% ==============================================================================
+
+\cvevent{Treasurer}{SCOPE}{2017/11 -- 2019/01}{Glasgow, UK}
+\cvevent{Officer for Social Events}{SCOPE}{2015/10 -- 2017/11}{Glasgow, UK}
+
+Student Community for Optics, Physics and Engineering (SCOPE) is dedicated
+to enrich and enhance the postgraduate students experience by organising outreach and
+educational activities, jobs fairs, company and school visits, journal clubs,
+and social events.
+
+% ==============================================================================
+\cvsection{Workload balance}
+% ==============================================================================
 
 % Adapted from @Jake's answer from http://tex.stackexchange.com/a/82729/226
 % \wheelchart{outer radius}{inner radius}{comma-separated list of value/text width/color/detail}
@@ -190,42 +211,40 @@ Thesis title: THz radiation generation in AlGaAs semiconductor nanowires excited
 
 \switchcolumn
 
+% ==============================================================================
 \cvsection{Top Languages}
+% ==============================================================================
 
 \cvskill{Python}{5}
 \cvskill{C++}{4}
+\cvskill{Matlab}{4}
 \cvskill{Rust}{3.5}
+\cvskill{C\#}{3}
 
+% ==============================================================================
 \cvsection{Software/Tools}
+% ==============================================================================
 
 \cvskill{Docker}{5}
 \cvskill{Azure}{4}
 \cvskill{Git}{5}
 \cvskill{CI/CD}{5}
 
+% ==============================================================================
 \cvsection{Other Skills}
+% ==============================================================================
 
-\cvtag{C++}
-\cvtag{Embedded Systems}
-\cvtag{Statistical Analysis}
+\cvtag{Agile development}\\
+\cvtag{Embedded Systems}\\
+\cvtag{Statistical Analysis}\\
+\cvtag{System modelling}\\
 
-\cvsection{Strengths}
+% \cvsection{Strengths}
+% \cvsection{Other skills}
 
-\cvtag{Communication skills}
-\cvtag{Proactive}
-\cvtag{Hard-working}
-\cvtag{Eye for detail}
-\cvtag{Motivator \& Leader}
-
-\cvsection{Other skills}
-
-\cvtag{Communication skills}
-\cvtag{Proactive}
-\cvtag{Hard-working}
-\cvtag{Eye for detail}\\
-\cvtag{Motivator \& Leader}
-
+% ==============================================================================
 \cvsection{Hobbies}
+% ==============================================================================
 
 \cvtag{Communication skills}
 \cvtag{Proactive}
