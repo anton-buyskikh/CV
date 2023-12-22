@@ -52,6 +52,9 @@
 \renewcommand{\itemmarker}{{\small\textbullet}}
 \renewcommand{\ratingmarker}{\faCircle}
 
+% Can make fonts of itemize environments smaller
+% \AtBeginEnvironment{itemize}{\small}
+
 \begin{document}
 \name{Anton Buyskikh}
 \tagline{Senior Quantum Software Engineer}
@@ -64,6 +67,7 @@
     \linkedin{anton-buyskikh}
     \github{anton-buyskikh}
     \orcid{0000-0003-4542-7086}
+    \printinfo{\faFlag}{Citizenship: Russia \& UK}[]
     % \homepage{www.homepage.com}
     % \twitter{@twitterhandle}
     
@@ -89,8 +93,15 @@
 
 \makecvheader
 
-% Can make fonts of itemize environments smaller
-% \AtBeginEnvironment{itemize}{\small}
+Research Software Engineer with a wide experience of solution development for customers
+seeking for new opportunities of bringing more value.
+It's in my style to guide the solution from the early days of working with the customer
+understanding their needs, striking the balance between high quality and cost constraints.
+I currently develop the software stack for the near term quantum computers and have designed
+and delivered applications and libraries used for internal and external products.
+Being naturally good with communication and with attention to detail I like working on
+with multifunctional teams, bridging hardware and software stack.
+My previous experiences also include researching as a data scientist.
 
 \columnratio{0.7}
 
@@ -104,16 +115,48 @@
 \cvevent{Quantum Software Engineer}{Riverlane}{2019/09 -- 2021/07}{Cambridge, UK}
 
 \begin{itemize}
-    \item Product owner responsibilities (Deltaflow, Benchkit, Calibration).
-    \item Taking ownership for the full development and deployment cycle: from planning
+
+    \item
+    Product owner of Benchkit for NQCC: working with stakeholders on
+    specs, organized and lead the technical team, delivered on time,
+    trained customers, and maintained the application.
+    {\bf [Python, FastAPI, Django, MySQL, PHP, Docker]}
+    
+    \item
+    Lead the technical side of the Calibrate product discovery with external
+    customers.
+    Developed multiple prototypes and convinced the stakeholders to integrate
+    with the main stream of products.
+    {\bf [Python, Airflow, PostgreSQL, Docker, Celery, Xilinx ZCU216 FPGA]}
+    
+    \item
+    Lead development of the internal hardware modelling tool that allowed us
+    to estimate performance of the hardware integration ahead of RTL implementation.
+    {\bf [C++, SystemC, Python]}
+
+    \item
+    Low level integration of the software stack responsible for quantum error
+    correction (QEC) cycles.
+    {\bf [C++, gRPC, Python]}
+
+    \item
+    Developed the compliation toolchain for lowering abstraction of physical
+    qubits to the pulse level of the target control system.
+    {\bf [Python]}
+
+    \item
+    Product owner of the product life cycle: from planning
     and writing the spec together with external stakeholders to the delivery,
     providing external training, and working on follow up feedback.
-    \item Driver for good software practices across the company, organiser of one of
-    the community of practices.
-    \item Working together with the product and delivery teams to facilitate the
+
+    \item
+    Working together with the product and delivery teams to facilitate the
     best solution to the customer.
-    \item Mentoring and line managing junior colleagues. Lead by example, follow best
-    practices and proactively offer support to our junior developers.
+
+    \item
+    Lead by example, follow best practices, and proactively offer support to our
+    junior developers, mentoring and line managing.
+
 \end{itemize}
 
 \divider
@@ -195,33 +238,20 @@ to enrich and enhance the postgraduate students experience by organising outreac
 educational activities, jobs fairs, company and school visits, journal clubs,
 and social events.
 
-% ==============================================================================
-\cvsection{Workload balance}
-% ==============================================================================
-
-% Adapted from @Jake's answer from http://tex.stackexchange.com/a/82729/226
-% \wheelchart{outer radius}{inner radius}{comma-separated list of value/text width/color/detail}
-\wheelchart{1.5cm}{0.5cm}{%
- 4/8em/accent!30/{Collaborative work},
- 3/8em/accent!40/Sole development,
- 1/8em/accent!60/Planning,
- 1/10em/accent/{Meeting\\stakeholders},
- 1/6em/accent!20/Team building
-}
-
 \switchcolumn
 
 % ==============================================================================
-\cvsection{Top Languages}
+\cvsection{Programming Languages}
 % ==============================================================================
 
 \cvtag{Python}
 \cvtag{C++}
 \cvtag{Bash}
-\cvtag{SQL}
+\cvtag{PostgreSQL}
 \cvtag{Rust}
 \cvtag{Matlab}
 \cvtag{C\#}
+\cvtag{SystemVerilog}
 \cvtag{Fortran}
 \cvtag{R}
 \cvtag{Julia}
@@ -239,17 +269,26 @@ and social events.
 \cvtag{SystemC}
 \cvtag{Azure}
 \cvtag{Git}
+\cvtag{gRPC}
+\cvtag{MPI}
+\cvtag{OpenMP}
+\cvtag{Unity}
+\cvtag{Django}
 \cvtag{GitHub Actions}
 
 % ==============================================================================
-\cvsection{Skills}
+\cvsection{Other Skills}
 % ==============================================================================
 
 \cvtag{Agile development}
 \cvtag{Embedded Systems}
+\cvtag{FPGA}
 \cvtag{Statistical Analysis}
-\cvtag{System modelling}
+\cvtag{Machine Learning}
+\cvtag{Hardware Modelling}
+\cvtag{SoC Design}
 \cvtag{Compilation}
+\cvtag{Linux}
 \cvtag{CI/CD}
 
 % ==============================================================================
@@ -267,8 +306,12 @@ and social events.
 \end{document}
 
 % ==============================================================================
+% END OF CV
+% The following sections are good to have written down for interviews
+% ==============================================================================
+
+% ==============================================================================
 \cvsection{Most Proud of}
-% Good for interviews
 % ==============================================================================
 
 \cvachievement{\faTrophy}{End-to-end app development}
@@ -280,3 +323,17 @@ prototyping, demoing, building, delivering, feedback, bug fixing, training, and 
 \cvachievement{\faHeartbeat}{Product ownership}
 {Developed and delivered to customer's hands two applications.}
 % NQCC, Calibration
+
+% ==============================================================================
+\cvsection{Workload balance}
+% ==============================================================================
+
+% Adapted from @Jake's answer from http://tex.stackexchange.com/a/82729/226
+% \wheelchart{outer radius}{inner radius}{comma-separated list of value/text width/color/detail}
+\wheelchart{1.5cm}{0.5cm}{%
+ 4/8em/accent!30/{Collaborative work},
+ 3/8em/accent!40/Sole development,
+ 1/8em/accent!60/Planning,
+ 1/10em/accent/{Meeting\\stakeholders},
+ 1/6em/accent!20/Team building
+}
