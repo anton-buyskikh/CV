@@ -30,8 +30,8 @@
 \definecolor{LightGrey}{HTML}{666666}
 \definecolor{DarkPastelRed}{HTML}{450808}
 \definecolor{PastelRed}{HTML}{8F0D0D}
-\definecolor{DarkPastelGreen}{HTML}{450808}
-\definecolor{PastelGreen}{HTML}{8F0D0D}
+\definecolor{DarkPastelGreen}{HTML}{56AE57}
+\definecolor{PastelGreen}{HTML}{77DD77}
 \definecolor{GoldenEarth}{HTML}{E7D192}
 
 \colorlet{name}{black}
@@ -67,28 +67,30 @@
     \location{Cambridge, UK}
     \linkedin{anton-buyskikh}
     \github{anton-buyskikh}
-    \orcid{0000-0003-4542-7086}
-    \printinfo{\faFlag}{Citizenship: Russia \& UK}[]
+    \printinfo{\faGraduationCap}{Google Scholar}[https://scholar.google.com/citations?user=G8zEw-0AAAAJ]
+    \printinfo{\faFlag}{Citizenships: Russia \& UK}[]
+    
+    % \orcid{0000-0003-4542-7086}
     % \homepage{www.homepage.com}
     % \twitter{@twitterhandle}
     
-    %% You can add your own arbitrary detail with
-    %% \printinfo{symbol}{detail}[optional hyperlink prefix]
+    % You can add your own arbitrary detail with
+    % \printinfo{symbol}{detail}[optional hyperlink prefix]
     % \printinfo{\faFlag}{Russian-British Nationality}[]
-    %% Or you can declare your own field with
-    %% \NewInfoFiled{fieldname}{symbol}[optional hyperlink prefix] and use it:
+    % Or you can declare your own field with
+    % \NewInfoFiled{fieldname}{symbol}[optional hyperlink prefix] and use it:
     % \NewInfoField{gitlab}{\faGitlab}[https://gitlab.com/]
     % \gitlab{your_id}
-    %%
-    %% For services and platforms like Mastodon where there isn't a
-    %% straightforward relation between the user ID/nickname and the hyperlink,
-    %% you can use \printinfo directly e.g.
+    %
+    % For services and platforms like Mastodon where there isn't a
+    % straightforward relation between the user ID/nickname and the hyperlink,
+    % you can use \printinfo directly e.g.
     % \printinfo{\faMastodon}{@username@instace}[https://instance.url/@username]
-    %% But if you absolutely want to create new dedicated info fields for
-    %% such platforms, then use \NewInfoField* with a star:
+    % But if you absolutely want to create new dedicated info fields for
+    % such platforms, then use \NewInfoField* with a star:
     % \NewInfoField*{mastodon}{\faMastodon}
-    %% then you can use \mastodon, with TWO arguments where the 2nd argument is
-    %% the full hyperlink.
+    % then you can use \mastodon, with TWO arguments where the 2nd argument is
+    % the full hyperlink.
     % \mastodon{@username@instance}{https://instance.url/@username}
 }
 
@@ -209,7 +211,7 @@ cutting-edge, sustainable, and scalable data science solutions.
     
     \item
     Development of tensor network algorithms for HPC.
-    {\bf [C++, Python]}
+    {\bf [C++, Python, Boost]}
     
     \item
     Local Linux cluster administration and management.
@@ -231,7 +233,10 @@ cutting-edge, sustainable, and scalable data science solutions.
 % ==============================================================================
 
 \cvevent{PhD in Physics}{University of Strathclyde}{2014/08 -- 2017/08}{Glasgow, UK}
+
 Thesis: Dynamics of Quantum Many-Body Systems with Long-Range Interactions
+
+Supervisor: Prof. Andrew Daley
 
 \divider
 
@@ -239,15 +244,18 @@ Thesis: Dynamics of Quantum Many-Body Systems with Long-Range Interactions
 
 \divider
 
-\cvevent{BSc\,\&\,MSc in Theoretical Physics}{St. Petersburg Polytechnic University}{2006/09 -- 2012/06}{St. Petersburg, Russia}
+\cvevent{BSc\,\&\,MSc in Condensed Matter Physics}{St. Petersburg Polytechnic University}{2006/09 -- 2012/06}{St. Petersburg, Russia}
+
 Thesis: THz radiation generation in AlGaAs semiconductor nanowires excited by femtosecond pulses.
+
+Supervisor: Dr. Valeriy N. Trukhin
 
 % ==============================================================================
 \cvsection{Other Experiences}
 % ==============================================================================
 
 \cvevent{Tutor}{University of Strathclyde}{2018/09 -- 2019/09}{Glasgow, UK}
-Topics: Python and Matlab programming for undergraduate students.
+Topics: Scientific programming on Python and Matlab for undergraduate students.
 
 \divider
 
@@ -257,7 +265,23 @@ Classes: Classical Mechanics, Quantum Mechanics
 \divider
 
 \cvevent{Lab Assistant}{Ioffe Institute}{2009/09 -- 2012/07}{St. Petersburg, Russia}
-% Optical table stuff.
+
+\begin{itemize}
+
+    \item
+    Experience with femtosecond lasers: MaiTai of Newport Corporation (<100 fs)
+    and Synergy of Femtolasers Produktions GmbH (<10 fs).
+    THz time-domain spectroscopy and lock-in amplification techniques.
+    Build experiments with hardware drivers for
+    characterisation of semiconductors, organic films and nanostructures.
+    {\bf [LabVIEW, Origin]}
+
+    \item
+    Modelling and numerical simulation of the THz pulse generation in i-GaAs and LT-GaAs
+    nanowire excited by femtosecond (10-100 fs) optical pulses.
+    {\bf [Matlab, COMSOL, Mathematica]}
+
+\end{itemize}
 
 \divider
 
@@ -313,12 +337,14 @@ and social events.
 \cvtag{Django}
 \cvtag{GitHub Actions}
 \cvtag{TensorFlow}
+\cvtag{Boost}
 
 % ==============================================================================
 \cvsection{Other Skills}
 % ==============================================================================
 
 \cvtag{Agile development}
+\cvtag{Jira}
 \cvtag{Embedded Systems}
 \cvtag{FPGA}
 \cvtag{Statistical Analysis}
@@ -339,7 +365,7 @@ here's a list of the most relevant trainings/projects:
 \begin{itemize}
     
     \item
-    2023/11 --- Gamedev with Unity and C\#, Online
+    2023/11 --- Game development with Unity and C\#, Online
     
     \item
     2023/10 --- Essential People Skills for Line Managers by CIPD, Cambridge, UK
@@ -380,7 +406,7 @@ risks of mis-prioritisation.
 In my practice I find it essential to communicate with stakeholders from other functions, such as
 product, delivery, IT security, marketing, to have multiple viewpoints.
 
-\vspace{5px}
+\vspace{1px}
 
 During work on a project I would like to spend my time roughly like that:
 
@@ -394,10 +420,10 @@ During work on a project I would like to spend my time roughly like that:
     10/10em/accent!90/{Lower priority work}
 }
 
-\vspace{5px}
+\vspace{1px}
 
-To keep in touch with the other teams I enjoy contributing to shared codebases and
-discussing solution designs in their context.
+To keep in touch with the other teams I intend to contribute to shared codebases and
+learn about their solution designs over a whiteboard.
 
 % ==============================================================================
 \cvsection{About Me}
