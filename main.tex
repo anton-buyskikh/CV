@@ -1,16 +1,18 @@
-%% Use the "normalphoto" option if you want a normal photo instead of cropped to a circle
+% Use the "normalphoto" option if you want a normal photo instead of cropped
+% to a circle
 % \documentclass[10pt,a4paper,normalphoto]{altacv}
 
 \documentclass[10pt,a4paper,ragged2e,withhyper]{altacv}
 %% AltaCV uses the fontawesome5 and packages.
 %% See http://texdoc.net/pkg/fontawesome5 for full list of symbols.
 
-\geometry{left=1.25cm,right=1.25cm,top=1.5cm,bottom=1.5cm,columnsep=1.2cm}
+% \geometry{left=1.25cm,right=1.25cm,top=1.5cm,bottom=1.5cm,columnsep=1.2cm}
+\geometry{left=1.0cm,right=1.0cm,top=1.0cm,bottom=1.0cm,columnsep=1.0cm}
 
 % Set columns of text in parallel
 \usepackage{paracol}
 
-% Change the font, depending on whether you're using pdflatex or xelatex/lualatex
+% Change the font
 \ifxetexorluatex
   % If using xelatex or lualatex:
   \setmainfont{Roboto Slab}
@@ -24,6 +26,7 @@
   \renewcommand{\familydefault}{\sfdefault}
 \fi
 
+% TODO choose nicer colours
 % Change colours
 \definecolor{SlateGrey}{HTML}{2E2E2E}
 \definecolor{LightGrey}{HTML}{666666}
@@ -66,7 +69,8 @@
     \location{Cambridge, UK}
     \linkedin{anton-buyskikh}
     \github{anton-buyskikh}
-    \printinfo{\faGraduationCap}{Google Scholar}[https://scholar.google.com/citations?user=G8zEw-0AAAAJ]
+    \printinfo{\faGraduationCap}{Google Scholar}
+    [https://scholar.google.com/citations?user=G8zEw-0AAAAJ]
     \printinfo{\faFlag}{Citizenships: Russia \& UK}[]
     
     % \orcid{0000-0003-4542-7086}
@@ -95,14 +99,18 @@
 
 \makecvheader
 
-% Research Software Engineer with a wide experience of solution development for customers
-% seeking for new opportunities of bringing more value.
-% It's in my style to guide the solution from the early days of working with the customer
-% understanding their needs, striking the balance between high quality and cost constraints.
-% I currently develop the software stack for the near term quantum computers and have designed
-% and delivered applications and libraries used for internal and external products.
-% Being naturally good with communication and with attention to detail I like working on
-% with multifunctional teams, bridging hardware and software stack.
+% TODO 1-2 sentences general for the industry sector?
+
+% Research Software Engineer with a wide experience of solution development for
+% customers seeking for new opportunities of bringing more value.
+% It's in my style to guide the solution from the early days of working with
+% the customer understanding their needs, striking the balance between high
+% quality and cost constraints.
+% I currently develop the software stack for the near term quantum computers
+% and have designed and delivered applications and libraries used for internal
+% and external products.
+% Being naturally good with communication and with attention to detail I like
+% working on with multifunctional teams, bridging hardware and software stack.
 % My previous experiences also include researching as a data scientist.
 
 % ==============================================================================
@@ -114,8 +122,10 @@
 \cvsection{Relevant Experience}
 % ==============================================================================
 
-\cvevent{Senior Quantum Software Engineer}{Riverlane}{2021/07 -- Present}{Cambridge, UK}
-\cvevent{Quantum Software Engineer}{Riverlane}{2019/09 -- 2021/07}{Cambridge, UK}
+\cvevent{Senior Quantum Software Engineer}{Riverlane}
+{2021/07 -- Present}{Cambridge, UK}
+\cvevent{Quantum Software Engineer}{Riverlane}
+{2019/09 -- 2021/07}{Cambridge, UK}
 
 \begin{itemize}
 
@@ -134,7 +144,8 @@
     
     \item
     Lead development of the internal hardware modelling tool that allowed us
-    to estimate performance of the hardware integration ahead of RTL implementation.
+    to estimate performance of the hardware integration ahead of RTL
+    implementation.
     {\bf [C++, SystemC, Python]}
 
     \item
@@ -169,23 +180,24 @@
 
     % From Dan
     \item
-    Early and long-term employee working on research, engineering and management for
-    a quantum computing software startup
+    Early and long-term employee working on research, engineering and
+    management for a quantum computing software startup
 
     \item
-    Development of novel software algorithms and distributed control system tools
-    for emerging quantum computing technologies
+    Development of novel software algorithms and distributed control system
+    tools for emerging quantum computing technologies
     
     \item
-    Building robust, scalable codebases and engineering processes from the ground up
+    Building robust, scalable codebases and engineering processes from the
+    ground up
     
     \item
-    Collaborating closely with academics and engineers to fully understand requirements of
-    software/hardware co-design for maximum performance
+    Collaborating closely with academics and engineers to fully understand
+    requirements of software/hardware co-design for maximum performance
     
     \item
-    Public engagement, outreach, networking, recruitment, and shaping the direction and
-    focus of the company during multiple growth phases
+    Public engagement, outreach, networking, recruitment, and shaping the
+    direction and focus of the company during multiple growth phases
     
     \item
     Most used technologies:
@@ -234,7 +246,8 @@
 
 \divider
 
-\cvevent{Research Associate}{University of Strathclyde}{2017/08 -- 2019/09}{Glasgow, UK}
+\cvevent{Research Associate}{University of Strathclyde}{2017/08 -- 2019/09}
+{Glasgow, UK}
 
 \begin{itemize}
 
@@ -268,7 +281,8 @@
 
 \divider
 
-\cvevent{Junior Research Assistant}{Ioffe Institute}{2009/09 -- 2012/07}{St. Petersburg, Russia}
+\cvevent{Junior Researcher}{Ioffe Institute}{2009/09 -- 2012/07}
+{St. Petersburg, Russia}
 
 \begin{itemize}
 
@@ -296,7 +310,7 @@
 
 \cvevent{Tutor}{University of Strathclyde}{2018/09 -- 2019/09}{Glasgow, UK}
 
-Topics: Scientific programming on Python and Matlab for undergraduate students.
+Scientific programming on Python and Matlab for undergraduate students.
 
 % \divider
 
@@ -308,17 +322,20 @@ Topics: Scientific programming on Python and Matlab for undergraduate students.
 
 \divider
 
-\cvevent{Teacher Assistant}{University of Pittsburgh}{2012/08 -- 2014/06}{Pittsburgh, PA, USA}
+\cvevent{Teacher Assistant}{University of Pittsburgh}{2012/08 -- 2014/06}
+{Pittsburgh, PA, USA}
 
-Classes: Introduction To Physics, Classical Mechanics, Quantum Mechanics
+Introduction To Physics, Classical Mechanics, Quantum Mechanics
 
 % \divider
 
-% \cvevent{Photographer Assistant}{Old Abe's Old Time Portraits}{2009/06 -- 2009/08}{Wisconsin Dells, WI, USA}
+% \cvevent{Photographer Assistant}{Old Abe's Old Time Portraits}
+% {2009/06 -- 2009/08}{Wisconsin Dells, WI, USA}
 
 % Work and Travel student exchange program.
-% Duties involved guiding customers through the experience, assisting the main photographer with
-% props and lightning, printing and framing, and general customer services.
+% Duties involved guiding customers through the experience, assisting the main
+% photographer with props and lightning, printing and framing, and general
+% customer services.
 
 % ==============================================================================
 \cvsection{Volunteering}
@@ -328,9 +345,9 @@ Classes: Introduction To Physics, Classical Mechanics, Quantum Mechanics
 \cvevent{Officer for Social Events}{SCOPE}{2015/10 -- 2017/11}{Glasgow, UK}
 
 % Student Community for Optics, Physics and Engineering (SCOPE) is dedicated
-% to enrich and enhance the postgraduate students experience by organising outreach and
-% educational activities, jobs fairs, company and school visits, journal clubs,
-% and social events.
+% to enrich and enhance the postgraduate students experience by organising
+% outreach and educational activities, jobs fairs, company and school visits,
+% journal clubs, and social events.
 
 % ==============================================================================
 \switchcolumn
@@ -341,20 +358,26 @@ Classes: Introduction To Physics, Classical Mechanics, Quantum Mechanics
 % ==============================================================================
 
 \cvevent{PhD in Physics}{University of Strathclyde}{Glasgow, UK, 2017}{}
-% \cvevent{PhD in Physics}{University of Strathclyde}{2014/08 -- 2017/08}{Glasgow, UK}
+% \cvevent{PhD in Physics}{University of Strathclyde}{2014/08 -- 2017/08}
+% {Glasgow, UK}
 % Thesis: Dynamics of Quantum Many-Body Systems with Long-Range Interactions
 % Supervisor: Prof. Andrew Daley
 
 \divider
 
 \cvevent{MSc in Physics}{University of Pittsburgh}{Pittsburgh, PA, USA, 2014}{}
-% \cvevent{MSc in Physics}{University of Pittsburgh}{2012/08 -- 2014/08}{Pittsburgh, PA, USA}
+% \cvevent{MSc in Physics}{University of Pittsburgh}{2012/08 -- 2014/08}
+% {Pittsburgh, PA, USA}
 
 \divider
 
-\cvevent{BSc\,\&\,MSc in Theoretical Physics}{St. Petersburg Polytechnic University}{St. Petersburg, Russia, 2012}{}
-% \cvevent{BSc\,\&\,MSc in Condensed Matter Physics}{St. Petersburg Polytechnic University}{2006/09 -- 2012/06}{St. Petersburg, Russia}
-% Thesis: THz radiation generation in AlGaAs semiconductor nanowires excited by femtosecond pulses.
+\cvevent{BSc\,\&\,MSc in Theoretical Physics}
+{St. Petersburg Polytechnic University}{St. Petersburg, Russia, 2012}{}
+% \cvevent{BSc\,\&\,MSc in Condensed Matter Physics}
+% {St. Petersburg Polytechnic University}
+% {2006/09 -- 2012/06}{St. Petersburg, Russia}
+% Thesis: THz radiation generation in AlGaAs semiconductor nanowires excited
+% by femtosecond pulses.
 % Supervisor: Dr. Valeriy N. Trukhin
 
 % ==============================================================================
@@ -407,6 +430,7 @@ Classes: Introduction To Physics, Classical Mechanics, Quantum Mechanics
 \cvtag{Windows 10/11}
 \cvtag{CI/CD}
 \cvtag{Xilinx Ultra96 \& ZCU216}
+\cvtag{CMake}
 
 % ==============================================================================
 \cvsection{Soft Skills}
@@ -436,8 +460,8 @@ Classes: Introduction To Physics, Classical Mechanics, Quantum Mechanics
 \cvsection{Trainings}
 % ==============================================================================
 
-% I try to undertake various training courses from time to time to diversify my skills,
-% here's a list of the most relevant trainings/projects:
+% I try to undertake various training courses from time to time to diversify my
+% skills, here's a list of the most relevant trainings/projects:
 
 \begin{itemize}
     
@@ -445,28 +469,35 @@ Classes: Introduction To Physics, Classical Mechanics, Quantum Mechanics
     % 2023/11 --- Game development with Unity and C\# --- Online
     
     \item
-    2023/10 --- Essential People Skills for Line Managers --- CIPD, Cambridge, UK
+    2023/10 --- Essential People Skills for Line Managers ---
+    CIPD, Cambridge, UK
 
     \item
-    2022/11 --- Linux System Administration Essentials (LFS207) --- Linux Foundation, Online
+    2022/11 --- Linux System Administration Essentials (LFS207) ---
+    Linux Foundation, Online
     
     \item
-    2021/08 --- ILM Level 3 Award in Leadership and Management Training --- LearningTree, Online
+    2021/08 --- ILM Level 3 Award in Leadership and Management Training ---
+    LearningTree, Online
     
     \item
     2021/05 --- Comprehensive Verilog --- Duolos, Online
     
     \item
-    2021/05 --- Embedded Systems Hardware and Software Design --- Duolos, Online
+    2021/05 --- Embedded Systems Hardware and Software Design ---
+    Duolos, Online
     
     \item
-    2018/08 --- Data Science and Machine Learning Bootcamp --- Pivigo, London, UK
+    2018/08 --- Data Science and Machine Learning Bootcamp ---
+    Pivigo, London, UK
     
     \item
-    2017/06 --- Neural Networks and Deep Learning --- Coursera, Online
+    2017/06 --- Neural Networks and Deep Learning ---
+    Coursera, Online
     
     \item
-    2015/09 --- Computational Condensed Matter Physics Bootcamp --- ICTP, Triest, Italy
+    2015/09 --- Computational Condensed Matter Physics Bootcamp ---
+    ICTP, Triest, Italy
     
 \end{itemize}
 
@@ -476,19 +507,25 @@ Classes: Introduction To Physics, Classical Mechanics, Quantum Mechanics
 
 \cvevent{}{Work Style}{}{}
 
-I greatly enjoy working on complex products/features that require a team with multi-domain
-expertise.
-I enjoy taking a lead in breaking down the complexity, investigating the user requirements,
-planing the work with the team members, and working collaboratively throughout to the delivery.
-Moreover, I find the iterative approach the most efficient in the long run as it minimizes
-risks of mis-prioritisation.
-In my practice I find it essential to communicate with stakeholders from other functions, such as
-product, delivery, IT security, marketing, to have multiple viewpoints.
+% TODO reduce and abstract from topics
+% this is a very opinionated part, like "I find my most productivity when..."
+
+I greatly enjoy working on complex products/features that require a team with
+multi-domain expertise.
+I enjoy taking a lead in breaking down the complexity, investigating the user
+requirements, planing the work with the team members, and working
+collaboratively throughout to the delivery.
+Moreover, I find the iterative approach the most efficient in the long run
+as it minimizes risks of mis-prioritisation.
+In my practice I find it essential to communicate with stakeholders from
+other functions, such as product, delivery, IT security, marketing, to have
+multiple viewpoints.
 
 % During work on a project I would like to spend my time roughly like that:
 
 % % Adapted from @Jake's answer from http://tex.stackexchange.com/a/82729/226
-% % \wheelchart{outer radius}{inner radius}{comma-separated list of value/text width/color/detail}
+% % \wheelchart{outer radius}{inner radius}
+% % {comma-separated list of value/text width/color/detail}
 % \wheelchart{1.5cm}{0.5cm}{
 %     45/10em/accent!10/{Sole development},
 %     25/10em/accent!30/{Collaborative/Team work},
@@ -497,27 +534,30 @@ product, delivery, IT security, marketing, to have multiple viewpoints.
 %     10/10em/accent!90/{Lower priority work}
 % }
 
-Constantly find balance between sole and team development depending on the phase of
-development and maturity of the team collaboration.
+Constantly find balance between sole and team development depending on the
+phase of development and maturity of the team collaboration.
 
-To keep in touch with the other teams I intend to contribute to shared codebases and
-learn about their solution designs over a whiteboard.
+To keep in touch with the other teams I intend to contribute to shared
+codebases and learn about their solution designs over a whiteboard.
 
 \divider
 
 \cvevent{}{Personal}{}{}
 
-My main priority in life is spending time with the family and passing my hobbies to my son.
+My main priority in life is spending time with the family and passing my
+hobbies to my son.
 
-We have lots of plans on getting into camping trips with canoeing and climbing adventures.
-In general bodyboarding and snorkelling are also on the top of the list, but it doesn't
+We have lots of plans on getting into camping trips with canoeing and climbing
+adventures.
+In general bodyboarding and snorkelling are also on the top of the list,
+but it doesn't
 happen as much as I wish, maybe if my new job had remote opportunities...
 
 When the weather is not that great, I find time for getting a few woodworking
 projects done and playing non-deterministic board games.
 
-Ah, yeah I can be quite a geek sometimes and have fun from math puzzle solving such as
-"Project Euler" and "Advent of Code", especially with new languages.
+Ah, yeah I can be quite a geek sometimes and have fun from math puzzle solving
+such as "Project Euler" and "Advent of Code", especially with new languages.
 
 % ==============================================================================
 \end{paracol}
